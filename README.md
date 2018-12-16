@@ -6,6 +6,11 @@
 ・RSpecの設定
 https://railstutorial.jp/chapters/beginning?version=5.1#sec-the_hello_application
 
+12/13
+・Slimの導入
+・Bootstrapの導入
+
+
 
 
 This README would normally document whatever steps are necessary to get the
