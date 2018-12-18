@@ -48,7 +48,9 @@ gem 'autoprefixer-rails'
 
 # Deviseの導入
 gem 'devise'
-gem 'omniauth-twitter'
+
+#Instagram連携
+gem 'omniauth-instagram'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

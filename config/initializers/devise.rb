@@ -9,7 +9,7 @@ Devise.setup do |config|
   # Devise will use the `secret_key_base` as its `secret_key`
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '1c51089c176454af38b0055b041975e2a7c2a8a2703383be6bd2346686d3296b296afb0b581488a608bcfb9d983fec1bbf2de9244008b6306f836a3833716284'
-  
+
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
   # config.parent_controller = 'DeviseController'
@@ -257,6 +257,8 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
+  #OAUTH_CONFIG = YAML.load_file("#{Rails.root}/config/omniauth.yml")[Rails.env].symbolize_keys!
+  config.omniauth :instagram, '0ab085b96ea344e9ae2a9fafca9376d0', '9b949132b9d449efad414ecabbb12a55'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
@@ -287,4 +289,5 @@ Devise.setup do |config|
   # ActiveSupport.on_load(:devise_failure_app) do
   #   include Turbolinks::Controller
   # end
+
 end
