@@ -46,6 +46,10 @@ gem 'bootstrap-sass'
 #自動でベンダープレフィックスを追加してくれる
 gem 'autoprefixer-rails'
 
+# Deviseの導入
+gem 'devise'
+gem 'omniauth-twitter'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

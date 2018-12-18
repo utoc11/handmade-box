@@ -9,6 +9,7 @@ https://railstutorial.jp/chapters/beginning?version=5.1#sec-the_hello_applicatio
 12/13
 ・Slimの導入
 ・Bootstrapの導入
+・Deviseの導入
 
 
 
