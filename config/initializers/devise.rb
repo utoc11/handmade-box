@@ -260,6 +260,7 @@ Devise.setup do |config|
   #OAUTH_CONFIG = YAML.load_file("#{Rails.root}/config/omniauth.yml")[Rails.env].symbolize_keys!
   config.omniauth :instagram, '0ab085b96ea344e9ae2a9fafca9376d0', '9b949132b9d449efad414ecabbb12a55'
 
+
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
