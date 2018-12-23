@@ -55,7 +55,7 @@ gem 'omniauth-instagram'
 #simple_formの導入
 gem 'simple_form'
 
-#画像アップロード用
+#画像アップロード用 一旦うまくいかないので保留
 gem 'carrierwave'
 #gem 'rmagick'
 

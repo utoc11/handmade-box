@@ -10,7 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_12_18_142235) do
+ActiveRecord::Schema.define(version: 2018_12_23_111048) do
+
+  create_table "questions", force: :cascade do |t|
+    t.integer "user_id"
+    t.string "title", null: false
+    t.text "body", null: false
+    t.integer "pd_tag_id", null: false
+    t.integer "tech_tag_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["pd_tag_id"], name: "index_questions_on_pd_tag_id"
+    t.index ["tech_tag_id"], name: "index_questions_on_tech_tag_id"
+    t.index ["user_id"], name: "index_questions_on_user_id"
+  end
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
