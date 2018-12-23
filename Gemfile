@@ -55,6 +55,10 @@ gem 'omniauth-instagram'
 #simple_formの導入
 gem 'simple_form'
 
+#画像アップロード用
+gem 'carrierwave'
+#gem 'rmagick'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
