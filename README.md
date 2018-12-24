@@ -1,4 +1,4 @@
-# README
+# handmade-box（ハンドメイド用のQAサイト）の制作メモ
 
 12/15〜
 ・gitの設定
@@ -16,31 +16,8 @@ https://railstutorial.jp/chapters/beginning?version=5.1#sec-the_hello_applicatio
 
 12/23　やってみたけどrmagickうまく導入できず保留
 ・プロフィールのアイコン設定の追加
-・プロフィールのヘッダー設定の追加
+・プロフィールのヘッダー設定の追加　
+・questionモデルの生成
 
-12/23〜　
-質問モデルの生成
-
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+12/24　questionと単数としていて時間ロスしてましたね。
+・questions_controllerの生成
