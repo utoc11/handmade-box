@@ -1,2 +1,17 @@
 h1 Questions#new
 p Find me in app/views/questions/new.html.slim
+
+.row
+  .col-sm-8.col-sm-offset-2
+    .text-center
+      h2
+        | 質問の投稿
+      p 新しく質問をしてみましょう。
+      = simple_form_for @question do |f|
+        .form-group
+          = f.input :title, autofocus: true, required: false
+          = f.input :body, required: false
+          = f.input :pd_tag_id, required: false
+          = f.input :tech_tag_id, required: false
+        .form-group
+          = f.submit "確認する", class: 'btn btn-primary btn-block btn-lg'
