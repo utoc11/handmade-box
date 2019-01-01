@@ -1,0 +1,42 @@
+p render 'shared/index'の表示
+
+table.table.table-hover
+  thead.thead-default
+    tr
+      th = @questions.human_attribute_name(:title)
+      th = @questions.human_attribute_name(:created_at)
+  tbody
+    - @questions.each do |question|
+      tr
+        td = link_to question.title, question
+        td = question.created_at
+
+
+
+  question.title
+  question.body
+
+/
+  - if questions.present?
+    - questions.each do |qtitle
+      .media.question__items-container
+        = link_to user_path(question.user), class: 'media__image thumb thumb-m' do
+  /        = image_tag question.user.profile_image.thumb.url
+  /      .question__items-body
+  /        .question__items-info
+            = link_to question.user.username, user_path(question.user)
+            が
+            = l question.created_at.to_date
+            に投稿
+          .question__items-title
+            = link_to question.title, question_path(question)
+  /      .question__items-status
+  /        - if question.likes.exists?
+  /          = icon 'fas', 'thumbs-up', question.likes.count, class: "#{current_user.likes.exists?(question: question) ? 'question__items-status-liked' : ''}"
+  /        - if question.comments.exists?
+  /          .div
+  /            = icon 'far', 'comment'
+  /            = link_to question.comments.count, question_path(question)
+    = paginate questions
+  - else
+    p 質問が1つもありません。
