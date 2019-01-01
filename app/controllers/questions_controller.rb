@@ -7,7 +7,8 @@ class QuestionsController < ApplicationController
   end
 
   def create
-    @question = Question.create(question_params,user_id: @current_user.id)
+    @question = Question.new(question_params)
+    @question.user_id = current_user.id
     if @question.save
       redirect_to question_path(@question), notice: t('common.flash.created')
     else

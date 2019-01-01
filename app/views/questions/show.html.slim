@@ -1,2 +1,17 @@
 h1 Questions#show
 p Find me in app/views/questions/show.html.slim
+商品カテゴリ
+= @question.pd_tag_id
+br
+技術カテゴリ
+= @question.tech_tag_id
+br
+投稿したユーザー
+= @question.user.username
+br
+投稿タイトル
+= @question.title
+br
+投稿内容
+= @question.body
+br
